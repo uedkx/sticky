@@ -93,12 +93,12 @@
         },
         unsupport: function() {
             var that = this;
-            this.insetBarDiv();
+            this.insertBarDiv();
             window.addEventListener('scroll', function() {
                 util.throttle(that.scroll(), 80, 80);
             }, false);
         },
-        insetBarDiv: function() {
+        insertBarDiv: function() {
             var that = this;
             util.each(this.bar, function(e, i) {
                 var div = document.createElement('DIV');
