@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Document</title>
+    <style>
+
+        body {
+            background: #eee9e0;
+        }
+    
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            border-bottom: 1px solid #000;
+            height: 100px;
+            background: #fff;
+        }
+
+        .js-fixed {
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .list {
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 14px;
+            color: #000;
+            border-bottom: 1px solid #ccc;
+            background: rgba(0, 0, 0, .2);
+            position: relative;
+            left: 0;
+            right: 0;
+            -webkit-transform: translateZ(0px);
+                    transform: translateZ(0px);
+            z-index: 2;
+            top: 0;
+            box-sizing: border-box;
+        }
+
+        .sticky-fixed {
+            position: fixed;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="js-fixed">
+        <h1 class="list js-box">fixed1</h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="js-fixed">
+        <h1 class="list js-box">fixed12</h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="js-fixed">
+        <h1 class="list js-box">fixed113</h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sticky.js"></script>
+    <script>
+        var sticky = new Sticky({
+            wrap: '.js-fixed', 
+            bar: '.js-box',
+            top: 0
+        });
+
+
+    </script>
+    
+</body>
+</html>
