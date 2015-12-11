@@ -8,6 +8,14 @@
 
 ###作用方法
 
+``` html
+<div class="sticky-wrap">
+	<div class="js-nav"></div>
+	<div class="main"></div>
+</div>
+```
+
+
 ``` js
 var sticky = new Sticky({
     wrap: '.sticky-wrap',
