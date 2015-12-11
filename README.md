@@ -27,6 +27,6 @@ var sticky = new Sticky({
 
 ###参数
 
-* wrap 容器的类名
-* bar  需要sticky的元素
-* top  元素sticky后的top距离
+* `wrap` 容器的类名
+* `bar`  需要sticky的元素
+* `top`  元素sticky后的top距离，默认为0
