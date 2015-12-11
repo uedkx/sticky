@@ -23,3 +23,10 @@ var sticky = new Sticky({
     top: 45
 });
 ```
+
+
+###参数
+
+* wrap 容器的类名
+* bar  需要sticky的元素
+* top  元素sticky后的top距离
